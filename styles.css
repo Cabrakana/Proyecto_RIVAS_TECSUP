@@ -1,123 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style:none,
+}
+
 body {
-    
-    background-color: #f5deb3; /* Marrón claro */
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
   }
 
-  header {
-    background-color: #8b4513; /* Marrón oscuro */
-    padding: 10px 0;
-  }
-
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    
-  }
-  
-  #inicio {
-
-    background-color: rgba(99, 61, 4, 0.582);
-    border-radius: 51px;
-    margin: 25px;
-
-  }
-
-  #variedades{
-    background-color: rgba(99, 61, 4, 0.582);
-    border-radius: 51px;
-    margin: 25px;
-  }
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  #galletas {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .galleta {
-    flex: 1 1 300px;
-    margin: 60px;
-    padding: 50px;
-    background-color: rgba(216, 205, 191, 0.959);
-    border-radius: 50px;
-    box-shadow: 0px 0px 5px 0px #332b2b4d;
-  }
-  
-  .galleta img {
-    width: 25%;
-    
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 50px;
-  }
-  
-  #contacto3 {
-    text-align: center;
-    color: rgb(48, 30, 9);
-    background-color: #af8b72; /* Marrón oscuro */
-    padding: 20px;
-    opacity:0.5
-    
-    
-  }
-  .contacto {
-    text-align: center;
-    color: rgb(48, 30, 9);
-    background-color: #af8b72; /* Marrón oscuro */
-    padding: 20px;
-    
-  }
-
-
-  .carousel {
-    width: 80%;
+  .container{
+    max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .carousel-inner img {
-    width: 100%;
-    height: auto;
   }
 
-  /* Navigation buttons */
-.carousel-prev,
-.carousel-next {
+.header {
+  background-image: linear-gradient(rgba(209, 209, 209, 0.7), rgba(131, 233, 162,0.7)),url(https://img.freepik.com/vector-gratis/iconos-planos-educacion_1284-13070.jpg);
+  background-position:center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display:flex;
+  align-items: center;
+}
+
+.header-content{
+  text-align: center;
+}
+.header-content h1 {
+  font-size: 50px;
+  line-height: 80px;
+  color:black;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.header-content  p {
+  font-size: 16px;
+  color:gray;
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
+
+.btn-1{
+  display: inline-block;
+  padding: 11px 35px;
+  background-image: linear-gradient(rgba(201, 184, 184, 0.5),rgba(129, 129, 129, 0.5 ));
+  border-radius: 12px;
+  color:black;
+  text-transform: uppercase;
+}
+.btn-1:hover{
+  background-color: aqua;
+}
+
+.menu{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
+  top:0;
+  left:0;
+  right:0;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.carousel-prev {
-  left: 10rem;
+.logo {
+  color:black;
+  font-size:25px;
+  font-weight: 800 ;
 }
 
-.carousel-next {
-  right:10rem;
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+  list-style-type: none;
+}
+
+.menu .navbar ul li a { 
+  font-size: 10px;
+  padding: 20px;
+  color: black;
+  display: block;
+  font-weight: 600;
+}
+.menu .navbar ul li a:hover{
+  color:rgb(2, 98, 110)
+}
+
+#menu{display: none;}
+
+.menu-icono{ width: 25px;}
+.menu label{cursor:pointer;
+display: none;}
+
+.servicios1{
+  padding: 100px 0;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.servicios1-content{
+  text-align: center;
+}
+
+.servicios1-content h2 {
+  font-size: 55px;
+  line-height:70px;
+  color:rgb(2, 98, 110);
+  text-transform: uppercase;
+  padding: 0 250px;
+  margin-top: 15px;
+}
+
+.servicio-img{
+  justify-content: center;
+  display: flex;
+  margin: 0px auto;
+  border-radius: 10px;
+  width: 100%;
+
+ 
+}
+
+.servicios1 img{
+  width: 200px;
+
+}
+
+.txt-p{
+  font-size: 16px;
+  color:gray;
+  padding: 0 250px;
+  margin-bottom:35px;
+}
+
+.servicios1-group{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.servicios1-img{ 
+  position: absolute;
+  top:0;
+  right: 0;
 }
